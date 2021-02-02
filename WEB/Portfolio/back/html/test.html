@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
+
+    <title>Document</title>
+  </head>
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div:nth-child(1) {
+      width: 100%;
+      height: 100vh;
+    }
+    body {
+      margin: 0;
+    }
+    .center > div {
+      width: 500px;
+      height: 300px;
+      background-color: crimson;
+    }
+
+    .second {
+      width: 500px;
+      height: 500px;
+      background-color: crimson;
+    }
+  </style>
+  <body>
+    <div class="center">
+      <div></div>
+    </div>
+    <div data-aos="fade-left" class="second"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+  </body>
+</html>

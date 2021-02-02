@@ -1,0 +1,500 @@
+/* svg-font-design start*/
+.letter_color {
+  stroke: black;
+}
+
+#letter_U {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: animation_let_U 1s forwards;
+}
+#letter_U:hover {
+  stroke: crimson;
+}
+
+#letter_D {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: animation_let_U 1s forwards 0.7s;
+}
+
+#letter_D:hover {
+  stroke: #1b91ff;
+}
+#letter_D {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: animation_let_U 1s forwards 0.7s;
+}
+
+#letter_A {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: animation_let_U 1s forwards 1.2s;
+}
+
+#letter_A:hover {
+  stroke: rgb(55, 250, 29);
+}
+
+#letter_R {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: animation_let_U 1s forwards 1.5s;
+}
+
+#letter_R:hover {
+  stroke: #2ecc71;
+}
+
+#letter_A_two {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: animation_let_U 1s forwards 1.8s;
+}
+
+#letter_A_two:hover {
+  stroke: #f1c40f;
+}
+
+#letter_J {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: animation_let_U 1s forwards 2.1s;
+}
+
+#letter_J:hover {
+  stroke: crimson;
+}
+
+#letter_A_three {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: animation_let_U 1s forwards 2.8s;
+}
+
+#letter_A_three:hover {
+  stroke: #f1c40f;
+}
+
+#letter_N {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: animation_let_U 1s forwards 3s;
+}
+
+#letter_N:hover {
+  stroke: #bb00ff;
+}
+
+#letter_I {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: animation_let_U 1s forwards 3.3s;
+}
+
+#letter_I:hover {
+  stroke: #f1c40f;
+}
+
+#letter_T {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: animation_let_U 1s forwards 3.5s;
+}
+
+#letter_T:hover {
+  stroke: #2ecc71;
+}
+
+#letter_H {
+  position: absolute;
+  margin-left: 200px;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: animation_let_U 1s forwards 3.8s;
+}
+
+#letter_H:hover {
+  stroke: crimson;
+}
+
+@keyframes animation_let_U {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/* svg-font-design finish*/
+/* ********************** */
+
+/* svg-monitor-design start */
+#monitor_display {
+  animation: monitorDisplay 3s infinite cubic-bezier(0.39, 0.575, 0.565, 1)
+    alternate;
+}
+
+@keyframes monitorDisplay {
+  9% {
+    fill: #f1c40f;
+  }
+  10% {
+    fill: #25ccf7;
+  }
+
+  12% {
+    fill: #e74c3c;
+  }
+
+  15% {
+    fill: #2ecc71;
+  }
+
+  18% {
+    fill: #9b59b6;
+  }
+
+  20% {
+    fill: #ecf0f1;
+  }
+
+  22% {
+    fill: #f1c40f;
+  }
+
+  25% {
+    fill: #f1c40f;
+  }
+  27% {
+    fill: #25ccf7;
+  }
+
+  28% {
+    fill: #e74c3c;
+  }
+
+  30% {
+    fill: #2ecc71;
+  }
+}
+/* svg-monitor-design finish */
+/* ************************* */
+
+/* svg-second-btn-design start */
+#second_btn {
+  fill: #2c3a47;
+  display: inline-block;
+  animation: secondBtnAnimation 2s infinite alternate linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes secondBtnAnimation {
+  30% {
+    transform: translateX(-2px);
+  }
+
+  60% {
+    transform: translate(2px);
+  }
+
+  80% {
+    transform: translateY(2px);
+    fill: rgb(131, 13, 36);
+  }
+
+  100% {
+    transform: translateX(-4px);
+  }
+}
+/* svg-scond-btn-design finish */
+/* *************************** */
+
+/* svg-first-btn-design start */
+#first_btn {
+  fill: #2c3a47;
+  display: inline-block;
+  animation: firstBtnAnimation 2s infinite alternate linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes firstBtnAnimation {
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+/* svg-first-btn-design finish */
+/* *************************** */
+
+/* svg-radio-btn-design start */
+#radio_btn {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: radioBtnAnimation 2s infinite linear;
+}
+
+@keyframes radioBtnAnimation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* svg-radio-btn-design finish */
+/* *************************** */
+
+/* svg-radio-mid-btn start */
+#radio_mid_btn {
+  animation: midBtnAnimation 3s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transform-origin: right;
+  transform-box: fill-box;
+}
+
+@keyframes midBtnAnimation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* svg-radio-mid-btn finish */
+/* *********************** */
+
+/* svg-antena-hold start */
+#antena_hold {
+  animation: antenaHoldAnimation 2s infinite alternate ease-in;
+}
+
+@keyframes antenaHoldAnimation {
+  50% {
+    transform: translateX(-4px);
+  }
+
+  100% {
+    transform: translate(4px);
+  }
+}
+/* svg-antena-hold finish */
+/* *********************** */
+
+/* svg-antena start */
+#antena {
+  animation: antenaAnimation 8s infinite alternate linear;
+}
+
+@keyframes antenaAnimation {
+  60% {
+    stroke: #29208a;
+  }
+
+  62% {
+    stroke: #f1c40f;
+  }
+
+  70% {
+    stroke: #29208a;
+    fill: #29208a;
+  }
+
+  72% {
+    stroke: #f1c40f;
+  }
+
+  75% {
+    stroke: #29208a;
+  }
+
+  100% {
+    stroke: orange;
+  }
+}
+
+/* svg-antena finish */
+/* **************** */
+
+/* svg-bulb start */
+#bulb {
+  animation: bulbAnimation 8s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes bulbAnimation {
+  60% {
+    stroke: #29208a;
+  }
+
+  62% {
+    stroke: #f1c40f;
+  }
+
+  70% {
+    stroke: #29208a;
+  }
+
+  72% {
+    stroke: #f1c40f;
+  }
+
+  75% {
+    stroke: #29208a;
+  }
+
+  100% {
+    stroke: orange;
+  }
+}
+/* svg-bulb finish */
+/* *************** */
+
+/* svg-cloud start */
+#cloud {
+  animation: cloudAnimation 5s infinite alternate linear;
+  fill: #22a6b3;
+}
+
+#cloud:hover {
+  fill: #2c3a47;
+  stroke-width: 5px;
+}
+
+@keyframes cloudAnimation {
+  40% {
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+/* svg-cloud finish */
+/* *************** */
+
+/* boatanimation start */
+@keyframes boatAnimation {
+  0% {
+    transform: translateX(-110vh);
+  }
+
+  100% {
+    transform: translateX(150vh);
+  }
+}
+/* boatanimation finish */
+/* ******************* */
+
+/* start-animation start */
+@keyframes starAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+/* start-animation finish */
+/* ********************* */
+
+/* skill-left-animation start */
+@keyframes skillRightAnimation {
+  50% {
+    transform: translateX(-100%);
+  }
+
+  80% {
+    transform: translateX(-100%);
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+/* skill-left-animation finish */
+/* ************************** */
+
+/* skill-right-animation start */
+@keyframes skillLeftAnimation {
+  50% {
+    transform: translateX(100%);
+  }
+
+  80% {
+    transform: translateX(100%);
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+/* skill-right-animation finish */
+/* *************************** */
+
+/* robo-animation start */
+@keyframes roboAnimation {
+  90% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(0, 0);
+  }
+}
+/* robo-animation finish */
+/* *************************** */
+
+/* testAnimation start */
+@keyframes testAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* testAnimation finish */
+/* ******************* */
+
+/* frontDisableAnimation start */
+@keyframes frontDisableAnimation {
+  to {
+    transform: scale(0, 0);
+  }
+}
+/* frontDisableAnimation finish */
+/* **************************  */
+
+#temp {
+  fill: black;
+}
